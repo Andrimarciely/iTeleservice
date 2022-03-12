@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBAction func done(_ sender: Any) {
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        let controller  =  story.instantiateViewController(identifier: "HomeController") as! HomeController
+    }
     @IBOutlet weak var textName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
