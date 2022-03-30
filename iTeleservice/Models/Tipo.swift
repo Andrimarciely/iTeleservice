@@ -9,7 +9,13 @@
 import Foundation
 import UIKit
 
-struct Tipo{
-    var id = UUID()
-    var nome = ""
+//struct Tipo{
+//    var id = UUID()
+//    var nome = ""
+//}
+
+enum Tipo {
+    case atendimento
+    case exame
+    case emergencia
 }
