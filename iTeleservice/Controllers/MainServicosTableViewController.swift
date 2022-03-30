@@ -8,19 +8,15 @@
 
 import UIKit
 
-let tipoAtendimento = Tipo(nome: "Atendimento Médico")
-
-let servicos: [Servico] = [
-    Servico(tipo :tipoAtendimento, descricao :"Médico Otorrinolaringologista"  , nome: "Maria Angela da Silva", email: "mariaangela@email.com", telefone: "(92)99999-9999")
-]
 
 class MainServicosTableViewController: UITableViewController {
 
-    
+    let servicos = Model.instance.servicos
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.estimatedRowHeight = 80.0
+        tableView.rowHeight = UITableView.automaticDimension
         
     }
 
@@ -28,25 +24,47 @@ class MainServicosTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return servicos.count
+        return 1
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "servCell", for: indexPath) as! servCellTableViewCell
-        cell.lblDescricao.text = servicos[indexPath.count].descricao
+        let index = indexPath.row
+        cell.lblDescricao.text = servicos[index].descricao
+        let tipoConvertido = convertTipo(tipo: servicos[index].tipo)
+        cell.lblTipoServico.text = tipoConvertido
+        
+        cell.lblNome.text = servicos[index].nome
+        cell.lblEmail.text = servicos[index].email
+        cell.lblTelefone.text = servicos[index].telefone
+        
         
         
         // Configure the cell...
 
         return cell
     }
+    
 
+    
+    func convertTipo(tipo: Tipo) -> String {
+        switch tipo {
+            case .atendimento:
+                return "atendimento"
+            case .emergencia:
+                return "emergencia"
+            case .exame:
+                return "exame"
+            default:
+                return "não encontrado"
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

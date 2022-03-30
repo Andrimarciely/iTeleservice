@@ -13,6 +13,11 @@ class servCellTableViewCell: UITableViewCell {
     @IBOutlet weak var lblTipoServico: UILabel!
     @IBOutlet weak var lblDescricao: UILabel!
     
+    @IBOutlet weak var lblNome: UILabel!
+    
+    @IBOutlet weak var lblEmail: UILabel!
+    
+    @IBOutlet weak var lblTelefone: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
