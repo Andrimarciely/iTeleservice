@@ -52,6 +52,7 @@
 		6AD7EDA727EE404300F6528C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6DD2A53227DBDCD500F05CD6 /* NovoServicoViewController.swift */,
 				6AD7EDA527EE401600F6528C /* MainServicosTableViewController.swift */,
 			);
 			path = Controllers;
@@ -90,7 +91,6 @@
 				6AD7EDA727EE404300F6528C /* Controllers */,
 				6DD2A52E27DBDCD500F05CD6 /* AppDelegate.swift */,
 				6DD2A53027DBDCD500F05CD6 /* SceneDelegate.swift */,
-				6DD2A53227DBDCD500F05CD6 /* NovoServicoViewController.swift */,
 				6DD2A53427DBDCD500F05CD6 /* Main.storyboard */,
 				6DD2A53A27DBDCD500F05CD6 /* Assets.xcassets */,
 				6DD2A53C27DBDCD500F05CD6 /* LaunchScreen.storyboard */,
