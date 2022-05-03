@@ -14,8 +14,10 @@ import UIKit
 //    var nome = ""
 //}
 
-enum Tipo {
-    case atendimento
-    case exame
-    case emergencia
+enum Especialidade {
+    case otorrinolaringologia
+    case ortopedista
+    case cardiologista
+    case oftalmologista
+    case psiquiatra
 }

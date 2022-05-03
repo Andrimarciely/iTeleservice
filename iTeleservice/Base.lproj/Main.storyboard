@@ -7,82 +7,88 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Serviços-->
+        <!--Consultas-->
         <scene sceneID="q60-G2-2C2">
             <objects>
-                <tableViewController id="aSE-aJ-8po" customClass="MainServicosTableViewController" customModule="iTeleservice" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ConsultasTableViewController" id="aSE-aJ-8po" customClass="MainConsultasTableViewController" customModule="iTeleservice" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eWQ-hO-r8I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="GKb-IQ-gdT">
-                            <rect key="frame" x="0.0" y="237" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="177" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="servCell" rowHeight="181" id="hbU-0C-EpY" customClass="servCellTableViewCell" customModule="iTeleservice" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="181"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="servCell" rowHeight="121" id="hbU-0C-EpY" customClass="servCellTableViewCell" customModule="iTeleservice" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="121"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hbU-0C-EpY" id="3gR-8I-RaL">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="181"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Médico Otorrinolaringologista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRg-gO-leh">
-                                            <rect key="frame" x="20" y="45" width="282" height="27"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Otorrinolaringologia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRg-gO-leh">
+                                            <rect key="frame" x="121" y="3" width="273" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria Angela da Silva" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G68-iB-KcO">
-                                            <rect key="frame" x="20" y="77" width="374" height="27"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Maria Angela da Silva" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G68-iB-KcO">
+                                            <rect key="frame" x="121" y="45" width="273" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atendimento Médico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtQ-FG-MJH">
-                                            <rect key="frame" x="99.5" y="11" width="215" height="27"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(92)99999-9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GO-n9-wkh">
+                                            <rect key="frame" x="121" y="90" width="142" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(92)99999-9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GO-n9-wkh">
-                                            <rect key="frame" x="20" y="141" width="173" height="27"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="mariaangela@email.com" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ei5-e7-0wy">
+                                            <rect key="frame" x="121" y="67" width="197" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oui-D7-Txg">
-                                            <rect key="frame" x="336" y="106" width="44" height="34"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="07:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGJ-EL-eqJ" userLabel="Lbl Horario">
+                                            <rect key="frame" x="15" y="30.5" width="75.5" height="36"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Médico Fulano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m82-pL-j29" userLabel="Lbl Medico">
+                                            <rect key="frame" x="121" y="23" width="119" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Email">
-                                                <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBb-RF-fJK">
-                                            <rect key="frame" x="324" y="139" width="69" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZy-h0-uE8">
+                                            <rect key="frame" x="97" y="6" width="2" height="104"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Telefone">
-                                                <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                        </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mariaangela@email.com" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ei5-e7-0wy">
-                                            <rect key="frame" x="20" y="109" width="234" height="27"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="21/06/2022" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PL4-3A-FNF" userLabel="Lbl Data">
+                                            <rect key="frame" x="2" y="67" width="97" height="26"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="eGJ-EL-eqJ" firstAttribute="centerY" secondItem="3gR-8I-RaL" secondAttribute="centerY" constant="-38" id="051-kI-pAW"/>
                                         <constraint firstItem="2GO-n9-wkh" firstAttribute="leading" secondItem="3gR-8I-RaL" secondAttribute="leading" constant="20" id="6Rk-jV-lvf"/>
                                         <constraint firstItem="G68-iB-KcO" firstAttribute="top" secondItem="hRg-gO-leh" secondAttribute="bottom" constant="5" id="ALb-AG-f6g"/>
                                         <constraint firstItem="2GO-n9-wkh" firstAttribute="top" secondItem="Ei5-e7-0wy" secondAttribute="bottom" constant="5" id="BDz-2B-zsE"/>
-                                        <constraint firstItem="BtQ-FG-MJH" firstAttribute="centerX" secondItem="3gR-8I-RaL" secondAttribute="centerX" id="J1G-aB-18b"/>
-                                        <constraint firstItem="hRg-gO-leh" firstAttribute="leading" secondItem="G68-iB-KcO" secondAttribute="leading" id="J2t-Na-dXE"/>
+                                        <constraint firstItem="hRg-gO-leh" firstAttribute="centerX" secondItem="G68-iB-KcO" secondAttribute="leading" id="J2t-Na-dXE"/>
                                         <constraint firstAttribute="bottom" secondItem="2GO-n9-wkh" secondAttribute="bottom" constant="13" id="JcW-tu-oqH"/>
                                         <constraint firstAttribute="trailing" secondItem="G68-iB-KcO" secondAttribute="trailing" constant="20" id="MFh-BM-ra2"/>
+                                        <constraint firstItem="PL4-3A-FNF" firstAttribute="centerX" secondItem="eGJ-EL-eqJ" secondAttribute="centerX" id="QrF-u1-Z5O"/>
                                         <constraint firstItem="Ei5-e7-0wy" firstAttribute="top" secondItem="G68-iB-KcO" secondAttribute="bottom" constant="5" id="YHU-Zx-uzP"/>
-                                        <constraint firstItem="BtQ-FG-MJH" firstAttribute="top" secondItem="3gR-8I-RaL" secondAttribute="top" constant="11" id="elR-9R-IqJ"/>
+                                        <constraint firstItem="PL4-3A-FNF" firstAttribute="top" secondItem="eGJ-EL-eqJ" secondAttribute="bottom" constant="0.5" id="i9Z-eu-JdF"/>
+                                        <constraint firstItem="eGJ-EL-eqJ" firstAttribute="centerX" secondItem="3gR-8I-RaL" secondAttribute="centerX" id="jAk-Ak-1kd"/>
                                         <constraint firstItem="G68-iB-KcO" firstAttribute="leading" secondItem="Ei5-e7-0wy" secondAttribute="leading" id="nAS-dF-5WX"/>
                                         <constraint firstItem="Ei5-e7-0wy" firstAttribute="leading" secondItem="2GO-n9-wkh" secondAttribute="leading" id="xRu-Ai-aAY"/>
                                     </constraints>
@@ -92,7 +98,6 @@
                                     <outlet property="lblEmail" destination="Ei5-e7-0wy" id="Hpk-oM-EDl"/>
                                     <outlet property="lblNome" destination="G68-iB-KcO" id="ARR-nV-Wzo"/>
                                     <outlet property="lblTelefone" destination="2GO-n9-wkh" id="1mJ-m4-gcX"/>
-                                    <outlet property="lblTipoServico" destination="BtQ-FG-MJH" id="a2d-iW-2Mc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -101,7 +106,7 @@
                             <outlet property="delegate" destination="aSE-aJ-8po" id="6ku-Mj-lyL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Serviços" id="583-v3-rmn">
+                    <navigationItem key="navigationItem" title="Consultas" id="583-v3-rmn">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hP0-h3-UwP">
                             <connections>
                                 <segue destination="D9o-YE-l8s" kind="show" id="aJi-cv-jxT"/>
@@ -170,6 +175,21 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oui-D7-Txg">
+                                        <rect key="frame" x="26" y="260" width="72" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="07:30">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBb-RF-fJK">
+                                        <rect key="frame" x="121" y="265" width="94" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="21/06/2022">
+                                            <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.89873417721518989" blue="0.89873417721518989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
